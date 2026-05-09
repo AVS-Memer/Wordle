@@ -35,7 +35,7 @@ var pattern = (guess, answer) => {
   return r;
 };
 
-fetch('/words.json')
+fetch('words.json')
   .then(response => response.json())
   .then(words => {
     document.getElementById('find').onclick = () => {
